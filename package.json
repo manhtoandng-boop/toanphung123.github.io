@@ -1,10 +1,14 @@
 {
   "name": "toanphung123.github.io",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -13,9 +17,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/manhtoandng-boop/toanphung123.github.io/issues"
   },
-  "homepage": "https://github.com/manhtoandng-boop/toanphung123.github.io#readme"
+  "homepage": "https://github.com/manhtoandng-boop/toanphung123.github.io#readme",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.4",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^4.3.4",
+    "vite": "^8.3.6"
+  }
 }

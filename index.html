@@ -1,42 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>My Site</title>
+  <link rel="icon" href="/favicon.ico">
+
+  <meta name="title" content="Toan Phung's Portfolio">
+  <meta name="description" content="Personal portfolio of Toan Phung - Software Engineering Student.">
+  <meta name="keywords" content="Web Development, Software Engineering, Portfolio">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Toan Phung">
+
+  <meta property="og:title" content="Toan Phung's Portfolio">
+  <meta property="og:description" content="Welcome to my personal portfolio website.">
+  <meta property="og:url" content="https://toanphung123.github.io/">
+  <meta property="og:image" content="https://toanphung123.github.io/banner.avif">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Toan Phung's Portfolio">
+  <meta name="twitter:description" content="My personal portfolio website.">
+  <meta name="twitter:image" content="https://toanphung123.github.io/banner.avif">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
-
-    body,
-    html {
-      height: 100%
-    }
-
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toan Phung - Portfolio</title>
 </head>
 
 <body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Logo
-    </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-<hr class="w3-border-grey" style="margin:auto;width:40%">
-<p class="w3-large w3-center">10 days left</p>
+
+<section
+  class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/banner.avif')] bg-cover bg-center">
+
+  <div class="w-full lg:w-[80%] p-12 text-gray-800">
+
+    <h1 class="text-4xl lg:text-6xl font-bold mb-10">
+
+      <span>
+        Hi, my name is
+        <span class="text-teal-400">Toan Phung</span>
+      </span>
+
+      <span class="block mt-5">
+        I'm a Software Engineering Student.
+      </span>
+
+    </h1>
+
+    <a href="#about-me"
+      class="uppercase border-2 border-teal-400 p-3 hover:bg-teal-400 hover:text-white transition-colors">
+
+      <span class="text-xl px-8 py-3">
+        Know more
+      </span>
+
+    </a>
+
+  </div>
+</section>
+
+<section id="about-me"
+  class="bg-teal-400 min-h-screen w-full flex flex-col justify-center items-center p-4 lg:p-12 text-white">
+
+  <div class="w-full lg:w-[60%] mb-5">
+
+    <h2 class="uppercase text-3xl lg:text-5xl text-center font-bold mb-12">
+      About Me
+    </h2>
+
+    <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+
+      <div class="flex justify-center items-center">
+        <img
+          class="object-cover max-w-xs rounded-lg"
+          src="/imgs/avatar.png"
+          alt="My avatar">
+      </div>
+
+      <div class="lg:col-span-2 flex justify-center items-center">
+
+        <div class="p-4 text-center lg:text-start">
+
+          <p class="text-lg mb-5">
+            I am a Computer Science student at VNUK.
+            I love programming, web development and learning
+            new technologies. My goal is to become a
+            professional Software Engineer.
+          </p>
+
+          <a href="#contact"
+            class="uppercase border-2 border-white p-3 hover:bg-white hover:text-teal-400">
+            Contact Me
+          </a>
+
+        </div>
+
+      </div>
     </div>
   </div>
+</section>
+
+<section id="contact"
+  class="bg-white min-h-[500px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+
+  <div class="w-full lg:w-[60%] mb-5">
+
+    <h2 class="uppercase text-3xl lg:text-5xl text-center font-bold mb-6">
+      Contact
+    </h2>
+
+    <p class="flex flex-col items-center text-center pt-5 pb-5">
+
+      <span class="text-2xl text-teal-500 mb-3">
+        I LOOK FORWARD TO WORKING WITH YOU
+      </span>
+
+      <span>
+        Let's connect and work together!
+      </span>
+
+    </p>
+  </div>
+
+  <a href="mailto:manhtoandng@gmail.com"
+    class="border-2 border-teal-400 px-8 py-3 bg-teal-400 text-white hover:bg-white hover:text-teal-400">
+
+    <span class="text-xl uppercase">
+      Send An Email Now
+    </span>
+
+  </a>
+</section>
+
+<footer class="bg-neutral-900 min-h-[250px] py-12 flex justify-center items-center">
+
+  <div class="w-[60%] flex flex-col justify-center items-center">
+
+    <ul class="flex flex-row gap-8">
+
+      <li>
+        <a href="https://github.com/PhungManhToan" target="_blank">
+          <img class="w-10" src="/imgs/github.svg" alt="GitHub">
+        </a>
+      </li>
+
+      <li>
+        <a href="https://linkedin.com/in/PhungManhToan" target="_blank">
+          <img class="w-10" src="/imgs/linkedin.svg" alt="LinkedIn">
+        </a>
+      </li>
+
+    </ul>
+
+    <hr class="w-1/2 border-gray-500 mt-10"/>
+
+    <p class="text-gray-500 mt-5">
+      ©2026 - Toan Phung
+    </p>
+
+  </div>
+</footer>
+
+<script type="module" src="/src/scripts/application.js"></script>
+
 </body>
 </html>
